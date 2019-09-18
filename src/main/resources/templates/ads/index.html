@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/header :: main-header('Blog Posts')" />
+</head>
+<body class="block">
+<th:block th:replace="fragments/navbar :: top-nav" />
+
+<main class="container">
+
+    <div class="card-columns">
+        <div class="card ad" th:each="ad : ${ads}">
+<!--            <img th:src="@{'http://lorempixel.com/400/200/city?id=' + ${ad.id}}" class="card-img-top" alt="..." />-->
+            <div class="card-body">
+                <h5 class="card-title" th:text="${ad.user.username}"></h5>
+                <p class="card-text" th:text="${ad.description}"></p>
+                <a th:href="@{/ads/{id}(id=${ad.id})}" class="btn btn-primary">Show</a>
+                <a th:href="@{/ads/{id}/edit(id=${ad.id})}" class="btn btn-warning">Edit</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<th:block th:replace="fragments/scripts :: scripts"></th:block>
+
+</body>
+</html>

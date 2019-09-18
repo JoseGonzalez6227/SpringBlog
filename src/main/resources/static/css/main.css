@@ -1,0 +1,77 @@
+
+
+.block{
+   background-color: #45425F;
+    overflow: scroll;
+
+
+    
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: orange;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: orange;
+}
+.nav-link {
+    color: orange;
+    text-decoration-color: orange;
+}
+
+.a {
+    color: orange;
+}
+
+.btn{
+    color: orange;
+}
+
+.navbar {
+background-color: #FFC6CA;
+}
+
+
+.ad {
+    width: 30rem;
+}
+
+
+
+.footer {
+    background-color: #45425F;
+    width: 120%;
+    height: 200px;
+    bottom: 0;
+    position: fixed;
+    border-top: 3px solid #FFC6CA;
+    clear: right;
+    padding: 30px 15px;
+
+}
+.footList {
+    list-style: none;
+    color: white;
+    font-size: 18px;
+}
+img {
+    height: 50px;
+    width: 50px;
+    padding-bottom: 10px;
+}
+
+.header img{
+    float: left;
+}
+
+.container {
+
+}
+
+p {
+    overflow: scroll;
+    padding-right: 100px;
+    padding-left: 100px;
+
+}

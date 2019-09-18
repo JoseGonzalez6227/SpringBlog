@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/header :: main-header('Home')" />
+</head>
+
+<th:block th:replace="fragments/navbar :: top-nav" />
+<body class="block">
+
+
+<h1 class="text-center text-white">Spring Blog Guide</h1>
+<div class="container">
+<p class="text-center text-white">Hi, welcome to the spring blog. On this web application you will see that there is a navigation bar on top. With the nav bar it allows the user(you) to decide what actions to take depending if the person wishes to be a user or viewer. Within the nav bar you will see that you can view All Posts, Create a Post, Sign up and Login. Before creating a post the user will have to register in order to proceed. After the the account has been made it will redirect the user to the Login page.
+</p>
+<p class="text-center text-white">Once you've successfully logged in, you will be able to do all the cool things any user would be able too. You may be thinking whats cool about being a user? Well, first thing is creating a post. With that on deck you will be able to type a blog post with a title and body text field. After you have made your post(s) the input will placed on the All Posts select anchor tag. Now everyone can see your post whether it be a user or viewer. Second and last cool thing about being a user is that you can comment on the post and give it a heart if you would like. So dont be shy and go blog! </p>
+</div>
+
+
+<div class="this-wont-render" th:replace="fragments/footer :: footer"></div>
+
+<th:block th:replace="fragments/scripts :: scripts"></th:block>
+</body>
+</html>
